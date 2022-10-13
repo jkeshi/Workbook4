@@ -26,11 +26,13 @@ function searchCandy(products, name) {
   }
 }
 searchCandy(products, "Swedish Fish");
-// function candySearch(products.name) {
-//     for (let i = 0; i < products.length; i++) {
-//         const candy = products[i];
-//         if (candy.product.indexOf(name) i= -1) {
-//             console.log(`we do carry $`);
-//         }
-//     }
-// }
+function candySearch(products,name) {
+    for (let i = 0; i < products.length; i++) {
+        const candy = products[i];
+        if (candy.product.indexOf(name) !==-1) {
+            console.log(`we do carry ` , candy);
+            
+        }
+    }
+}
+candySearch(products,"Swedish Fish")
